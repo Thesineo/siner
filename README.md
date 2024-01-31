@@ -1,5 +1,5 @@
 # siner
-Predicting the ICO ( Cryptocurrencies ) offerings for Fundraising teams and Startups
+# Predicting the ICO ( Cryptocurrencies ) offerings for Fundraising teams and Startups
 rm(list=ls())
 icobench<- read.csv("Downloads/Machinelearningcourseworkright.csv")
 View(icobench)
@@ -82,13 +82,13 @@ crowdfunding_train_labels
 install.packages("class")
 library(class)
 
-#We use knn() function to perform classification
-#We split our data into training and test datasets, 
-#each with exactly the same numeric features. 
-#The labels for the training data are stored 
-#in a separate factor vector. 
-#The only remaining parameter is k, 
-#which specifies the number of neighbors to include in the vote.
+# We use knn() function to perform classification
+# We split our data into training and test datasets, 
+# each with exactly the same numeric features. 
+# The labels for the training data are stored 
+# in a separate factor vector. 
+# The only remaining parameter is k, 
+# which specifies the number of neighbors to include in the vote.
 K=45
 # training size =2666 so we try its square root 51 as the value of k first
 #Using an odd number of K will reduce the chance of ending with a tie vote.
@@ -136,7 +136,7 @@ auc_object_NB <- performance(pred_object, measure = "auc")
 auc_NB <- auc_object_NB@y.values[[1]]
 
 
-#Naive Bayes Classifers
+# Naive Bayes Classifers
 rm(list=ls())
 icobench<-read.csv("Downloads/MLNB.csv")
 View(icobench)
