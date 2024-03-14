@@ -1,5 +1,5 @@
 # siner
-# Predicting the ICO ( Cryptocurrencies ) offerings for Fundraising teams and Startups
+# Artifical Intelligence Model using Machine learning Algorithm to predict  the ICO ( Cryptocurrencies ) offerings for Fundraising teams and Startups
 rm(list=ls())
 icobench<- read.csv("Downloads/Machinelearningcourseworkright.csv")
 View(icobench)
